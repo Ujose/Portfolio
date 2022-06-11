@@ -42,11 +42,11 @@ h2{
     display: flex;
 }
 
+
 .social-midia a {
     text-decoration: none;
-    color: black;
+    color:white;
     padding: 1rem 4rem;
-    border: 1px solid rgb(134, 92, 177) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +55,7 @@ h2{
 
 a:hover{
     background-color: white;
+    color: blueviolet;
 }
 
 /*MENU HAMBURGUER*/
@@ -124,6 +125,12 @@ a:hover{
      z-index: -1;
      transition: 400ms ease-in-out 0s;
  }
+ .menu-edit:hover{
+
+     background-color: blueviolet;
+     color: white;
+    
+ }
 
  .menu-items{
      position: fixed;
@@ -190,3 +197,63 @@ a:hover{
 
  }
  /*CARDS*/
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:3rem 0 ;
+    background-color: white;
+}
+.card.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white ;
+    background-image: url('img/minha\ logo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+.card-text{
+    width: 40%;
+    letter-spacing: 1px;
+    color: gray;
+}
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    position: relative;
+}
+.card-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid white;
+    opacity: o;
+    transition: 0.5 ease-in-out;
+
+}
